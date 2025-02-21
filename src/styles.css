@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #082140;
+  font-family: "Zilla Slab";
+}
+
+body {
+  position: relative;
+}
+
+.top-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  background-image: url(./img/denver-nuggets-skyline-red-logo.png);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 50px 30px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.about-me {
+  background-color: white;
+  max-width: 500px;
+  padding: 40px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-me > p {
+  margin-bottom: 15px;
+}
+
+.about-logos {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+  gap: 10px;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-pic {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 100%;
+  }
+}
+
+.name-header {
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+  text-align: center;
+  font-size: 3.5rem;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .name-header {
+    font-size: 2rem;
+  }
+}
+
+.my-career {
+  padding: 20px 50px 80px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-career-heading {
+  grid-column: 1 / -1;
+  color: #082140;
+  margin-bottom: 0;
+}
+
+.seasons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.season-card {
+  border: solid 1px #082140;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.season-img {
+  border: solid 1px black;
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+}
+
+.season-details {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  gap: 10px;
+  padding: 25px;
+  background-color: white;
+}
+
+.season-name,
+button {
+  grid-row: 1 / 2;
+}
+
+.season-description {
+  grid-row: 2 / 3;
+}
+
+button {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./img/denver-nuggets-skyline-red-logo.png);
+}
+
+.contact-me {
+  background-color: white;
+  padding: 20px;
+}
+
+.contact-me > * {
+  margin-bottom: 15px;
+}
+
+.phone-wrapper,
+.email-wrapper {
+  display: flex;
+}
+
+.phone-logo,
+.email-logo {
+  margin-right: 10px;
+}
+
+.footer-img {
+  max-width: 500px;
+  padding: 25px;
+  border-radius: 5%;
+}
+
+@media (max-width: 600px) {
+  .footer-img {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+}
